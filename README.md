@@ -39,10 +39,10 @@ The goal of this project is to create a text generator that can produce text in 
 ## How It Works
 
 ### 1. Loading Shakespeare Texts
-The script downloads the Shakespeare dataset, reads it into memory, and prints the length of the text and the first 250 characters for inspection.
+The script downloads the Shakespeare dataset, reads it into memory and prints the length of the text and the first 250 characters for inspection.
 
 ### 2. Preparing Data
-The text is processed to create a set of unique characters and mappings from characters to indices. The text is then converted into an integer representation, and input-target pairs are created for training.
+The text is processed to create a set of unique characters and mappings from characters to indices. The text is then converted into an integer representation and input-target pairs are created for training.
 
 ### 3. Building Recurrent Neural Network
 An RNN model is built with an embedding layer to convert integer representations into dense vectors, a GRU (Gated Recurrent Unit) layer with 1024 units, for capturing long-term temporal dependencies and a dense output layer to predict the next character in the sequence.
